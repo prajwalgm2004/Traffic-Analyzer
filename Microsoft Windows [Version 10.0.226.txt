@@ -1,0 +1,176 @@
+Microsoft Windows [Version 10.0.22631.4317]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\cnet-java-traffic-analyser-master>javac TrafficAnalysis.java
+
+E:\cnet-java-traffic-analyser-master>java TrafficAnalysis
+___  __        ___  ___    __                              __     __
+ |  |__)  /\  |__  |__  | /  `     /\  |\ |  /\  |    \ / /__` | /__`
+ |  |  \ /~~\ |    |    | \__,    /~~\ | \| /~~\ |___  |  .__/ | .__/
+[2024.10.21 10:44:52] |INFO| - Loading trace from file samples/traceA.csv
+[2024.10.21 10:44:52] |INFO| - Finished trace parsing. Ready to go.
+0- Exit
+1- Emitter-receiver pair analysis
+2- Total length and number of packets
+3- TCP ports and known services
+4- Number and types of ICMP packets
+5- Packets size analysis
+6- TCP connections (tries)
+7- TCP connections (established)
+8- Receiver of more traffic
+9- Emitter of more traffic
+Choose your option : 1
+[2024.10.21 10:44:58] |INFO| - Running [Emitter-receiver pair analysis]...
+[BEGIN - OUTPUT]
+Number of packets with receiver and sender using IPv4 addr.:    35016
+Number of packets with receiver and sender using IPv6 addr.:    7851
+Number of packets with receiver and sender using hostnames:     1829
+[END - OUTPUT]
+0- Exit
+1- Emitter-receiver pair analysis
+2- Total length and number of packets
+3- TCP ports and known services
+4- Number and types of ICMP packets
+5- Packets size analysis
+6- TCP connections (tries)
+7- TCP connections (established)
+8- Receiver of more traffic
+9- Emitter of more traffic
+Choose your option : 2
+[2024.10.21 10:45:13] |INFO| - Running [Total length and number of packets]
+[BEGIN - OUTPUT]
+Total trace time:       1559.93 seconds
+Total trace size:       44696 packets
+[END - OUTPUT]
+0- Exit
+1- Emitter-receiver pair analysis
+2- Total length and number of packets
+3- TCP ports and known services
+4- Number and types of ICMP packets
+5- Packets size analysis
+6- TCP connections (tries)
+7- TCP connections (established)
+8- Receiver of more traffic
+9- Emitter of more traffic
+Choose your option : 3
+[2024.10.21 10:45:29] |INFO| - Running [TCP ports and known services]
+[BEGIN - OUTPUT]
+Number of unique TCP ports:     656
+Found well known services:      [443 (HTTPS), 80 (HTTP)]
+[END - OUTPUT]
+0- Exit
+1- Emitter-receiver pair analysis
+2- Total length and number of packets
+3- TCP ports and known services
+4- Number and types of ICMP packets
+5- Packets size analysis
+6- TCP connections (tries)
+7- TCP connections (established)
+8- Receiver of more traffic
+9- Emitter of more traffic
+Choose your option : 4
+[2024.10.21 10:47:00] |INFO| - Running [Number and types of ICMP packets]...
+[BEGIN - OUTPUT]
+Number of ICMP packets: 8673
+Found ICMP types:       [0, 3, 8]
+[END - OUTPUT]
+0- Exit
+1- Emitter-receiver pair analysis
+2- Total length and number of packets
+3- TCP ports and known services
+4- Number and types of ICMP packets
+5- Packets size analysis
+6- TCP connections (tries)
+7- TCP connections (established)
+8- Receiver of more traffic
+9- Emitter of more traffic
+Choose your option : 5
+[2024.10.21 10:47:51] |INFO| - Running [Packets size analysis]...
+[BEGIN - OUTPUT]
+Minimum:        20 bytes
+Maximum:        1514 bytes
+Ar. Mean:       292 bytes
+[END - OUTPUT]
+[2024.10.21 10:47:51] |INFO| - Exported additional data to ./samples/data_{DATETIME}.csv file.
+[2024.10.21 10:47:51] |INFO| - In order to generate a barplot from the exported data, execute the python script inside 'plugin' folder.
+0- Exit
+1- Emitter-receiver pair analysis
+2- Total length and number of packets
+3- TCP ports and known services
+4- Number and types of ICMP packets
+5- Packets size analysis
+6- TCP connections (tries)
+7- TCP connections (established)
+8- Receiver of more traffic
+9- Emitter of more traffic
+Choose your option : 6
+[2024.10.21 10:48:21] |INFO| - Running [TCP connections (tries)]
+[BEGIN - OUTPUT]
+Number of TCP conn. tries:      679
+Source who tried the most:      192.168.1.165 (429 times)
+[END - OUTPUT]
+0- Exit
+1- Emitter-receiver pair analysis
+2- Total length and number of packets
+3- TCP ports and known services
+4- Number and types of ICMP packets
+5- Packets size analysis
+6- TCP connections (tries)
+7- TCP connections (established)
+8- Receiver of more traffic
+9- Emitter of more traffic
+Choose your option : 7
+[2024.10.21 10:48:33] |INFO| - Running [TCP connections (established)
+[BEGIN - OUTPUT]
+Number of TCP conn. established:        655
+[END - OUTPUT]
+0- Exit
+1- Emitter-receiver pair analysis
+2- Total length and number of packets
+3- TCP ports and known services
+4- Number and types of ICMP packets
+5- Packets size analysis
+6- TCP connections (tries)
+7- TCP connections (established)
+8- Receiver of more traffic
+9- Emitter of more traffic
+Choose your option : 8
+[2024.10.21 10:48:40] |INFO| - Running [Receiver of more traffic]
+[BEGIN - OUTPUT]
+Internet Protocol address:      192.168.1.119
+Amount of received traffic:     3359221 bytes
+Number of received packets:     3083
+Estimated network throughput:   269.18 bits/s
+[END - OUTPUT]
+0- Exit
+1- Emitter-receiver pair analysis
+2- Total length and number of packets
+3- TCP ports and known services
+4- Number and types of ICMP packets
+5- Packets size analysis
+6- TCP connections (tries)
+7- TCP connections (established)
+8- Receiver of more traffic
+9- Emitter of more traffic
+Choose your option : 9
+[2024.10.21 10:48:58] |INFO| - Running [Emitter of more traffic]
+[BEGIN - OUTPUT]
+Internet Protocol address:      172.217.25.161
+Amount of emitted traffic:      3253496 bytes
+Number of emitted packets:      2439
+Estimated network throughput:   260.71 bits/s
+[END - OUTPUT]
+0- Exit
+1- Emitter-receiver pair analysis
+2- Total length and number of packets
+3- TCP ports and known services
+4- Number and types of ICMP packets
+5- Packets size analysis
+6- TCP connections (tries)
+7- TCP connections (established)
+8- Receiver of more traffic
+9- Emitter of more traffic
+Choose your option : 0
+[2024.10.21 10:49:04] |INFO| - Thank you for using TrafficAnalysis tool! Exiting...
+
+E:\cnet-java-traffic-analyser-master>
